@@ -1,0 +1,92 @@
+.Menu {
+    width: 28rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 55%;
+    transform: translateY(-60%);
+    Left: 10vw;
+}
+
+.item{
+    height: 3.7rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title{
+    font: 1rem;
+    padding-right: 2.5rem;
+}
+
+.item.active .title {
+    font-size: 1.5rem;
+}
+
+.sub-container {
+    width: 25.5rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 15%;
+    right: 10vw;
+    cursor: pointer;
+}
+
+.active-subheading {
+    cursor: default;
+}
+
+.item.active:nth-child(1) {
+    background: linear-gradient(90deg, var(--transparent), var
+    (--purple) 70%);
+    border-radius: var(--radius-right);
+}
+
+.item.active:nth-child(2) {
+    background: linear-gradient(90deg, var(--transparent), var(--blue)
+    70%);
+    border-radius: var(--radius-right);
+}
+
+.item.active:nth-child(3) {
+    background: linear-gradient(90deg, var(--transparent), var(--cyan) 70%);
+    border-radius: var(--radius-right);
+}
+
+.sub.sub-container-1.active-subheading h3,
+.sub.sub-container-1.active-subheading h3,
+.sub.sub-container-1.active-subheading h3 {
+   border-radius: var(--radius-lef);
+}
+
+.sub.sub-container-1.active-subheading h3 {
+    background: linear-gradient(90deg, var(--transparent), var
+    (--purple) 100%);
+}
+
+.sub.sub-container-1.active-subheading h3 {
+    background: linear-gradient(90deg, var(--transparent), var(--blue)
+    100%);
+}
+
+.sub.sub-container-3.active-subheading h3 {
+    background: linear-gradient(90deg, var(--transparent), var(--cyan) 100%);
+}
+
+.item.active{
+    position: relative;
+    cursor: default;
+}
+
+p-container {
+    display: none;
+}
+
+.active-subheading .p-container {
+    display: block;
+    font-size: 1rem;
+}
+

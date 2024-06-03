@@ -38,4 +38,45 @@ const subheadingsData = {
             ),
         },
     ],
+    3: [
+        {
+            title: "2023, SIA Supervisor",
+            content: (
+                <>
+                    <p>
+                    ● Patrolled internal building spaces and facility grounds to identify and deter threats. 
+                    ● Operated handheld metal detectors and other surveillance devices like CCTV. 
+                    ● Communicated effectively with the security team and building supervisors. 
+                    ●Attended to customer requests and provided suitable solutions or directions. 
+                    </p>
+                </>
+            ),
+        },
+        {
+            title: "2019 - 2022, Database Administrator",
+            content: (
+                <>
+                    <p>
+                    ● Implemented security protocols to safeguard data from unauthorized access, breaches, and loss. 
+                    ● Monitored and optimized database performance for efficient data retrieval. 
+                    ● Responded to database-related issues and troubleshooting problems as they arise. 
+                    </p>
+                </>
+            ),
+        },
+        {
+            title: "2016 - 2018, IT Support Specialist",
+            content: (
+                <>
+                    <p>
+                    ● Provided technical support for computer hardware, software, and peripherals. 
+                    ● Managed inventory and efficiently tracked expenses to maintain budget. 
+                    ● Assisted with network connectivity issues, both wired and wireless. 
+                    </p>
+                </>
+            ),
+        },
+    ],
 };
+
+export default subheadingsData

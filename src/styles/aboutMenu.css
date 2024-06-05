@@ -18,7 +18,7 @@
 
 .title{
     font: 1rem;
-    padding-right: 2.5rem;
+    padding-right: 1.5rem;
 }
 
 .item.active .title {
@@ -90,3 +90,8 @@ p-container {
     font-size: 1rem;
 }
 
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain; 
+}

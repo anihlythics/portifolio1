@@ -18,21 +18,21 @@ const subheadingsData = {
     ],
     2: [
         {
-            title: "2024 Masters Degree",
+            title: "Leeds Beckett University, UK",
             content: (
                 <>
                     <p>
-                        Leeds Beckett University, UK.
+                     MSc Data Science, 2024.  
                     </p>
                 </>
             ),
         },
         {
-            title: "2018 Bachelors Degree",
+            title: "Ebonyi State University, Nigeria",
             content: (
                 <>
                     <p>
-                        Ebonyi State University, Nigeria.
+                     Bsc Computer Science, 2014.
                     </p>
                 </>
             ),
@@ -44,9 +44,9 @@ const subheadingsData = {
             content: (
                 <>
                     <p>
-                    ● Patrolled internal building spaces and facility grounds to identify and deter threats. 
-                    ● Operated handheld metal detectors and other surveillance devices like CCTV. 
-                    ● Communicated effectively with the security team and building supervisors. 
+                    ● Operated handheld metal detectors and other surveillance devices like CCTV.
+                    </p>
+                    <p> 
                     ●Attended to customer requests and provided suitable solutions or directions. 
                     </p>
                 </>
@@ -57,8 +57,9 @@ const subheadingsData = {
             content: (
                 <>
                     <p>
-                    ● Implemented security protocols to safeguard data from unauthorized access, breaches, and loss. 
-                    ● Monitored and optimized database performance for efficient data retrieval. 
+                    ● Implemented security protocols to safeguard data from unauthorized access, breaches, and loss.
+                    </p>
+                    <p> 
                     ● Responded to database-related issues and troubleshooting problems as they arise. 
                     </p>
                 </>
@@ -69,8 +70,9 @@ const subheadingsData = {
             content: (
                 <>
                     <p>
-                    ● Provided technical support for computer hardware, software, and peripherals. 
-                    ● Managed inventory and efficiently tracked expenses to maintain budget. 
+                    ● Provided technical support for computer hardware, software, and peripherals.
+                    </p>
+                    <p>  
                     ● Assisted with network connectivity issues, both wired and wireless. 
                     </p>
                 </>

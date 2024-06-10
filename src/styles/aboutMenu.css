@@ -1,3 +1,12 @@
+:root {
+    --transparent: rgba(0, 0, 0, 0);
+    --orange: #bd6a0c;
+    --green: #027e44;
+    --cyan: #09cece;
+    --radius-right: 10px;
+    --radius-left: 10px;
+}
+
 .Menu {
     width: 28rem;
     position: fixed;
@@ -5,7 +14,7 @@
     flex-direction: column;
     top: 55%;
     transform: translateY(-60%);
-    Left: 10vw;
+    left: 10vw;
 }
 
 .item{
@@ -17,7 +26,7 @@
 }
 
 .title{
-    font: 1rem;
+    font-size: 1rem;
     padding-right: 1.5rem;
 }
 
@@ -26,7 +35,7 @@
 }
 
 .sub-container {
-    width: 25.5rem;
+    width: 28.5rem;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -40,14 +49,12 @@
 }
 
 .item.active:nth-child(1) {
-    background: linear-gradient(90deg, var(--transparent), var
-    (--purple) 70%);
+    background: linear-gradient(90deg, var(--transparent), var(--orange) 70%);
     border-radius: var(--radius-right);
 }
 
 .item.active:nth-child(2) {
-    background: linear-gradient(90deg, var(--transparent), var(--blue)
-    70%);
+    background: linear-gradient(90deg, var(--transparent), var(--green) 70%);
     border-radius: var(--radius-right);
 }
 
@@ -57,19 +64,17 @@
 }
 
 .sub.sub-container-1.active-subheading h3,
-.sub.sub-container-1.active-subheading h3,
-.sub.sub-container-1.active-subheading h3 {
-   border-radius: var(--radius-lef);
+.sub.sub-container-2.active-subheading h3,
+.sub.sub-container-3.active-subheading h3 {
+    border-radius: var(--radius-left);
 }
 
 .sub.sub-container-1.active-subheading h3 {
-    background: linear-gradient(90deg, var(--transparent), var
-    (--purple) 100%);
+    background: linear-gradient(90deg, var(--transparent), var(--orange) 100%);
 }
 
-.sub.sub-container-1.active-subheading h3 {
-    background: linear-gradient(90deg, var(--transparent), var(--blue)
-    100%);
+.sub.sub-container-2.active-subheading h3 {
+    background: linear-gradient(90deg, var(--transparent), var(--green) 100%);
 }
 
 .sub.sub-container-3.active-subheading h3 {
@@ -81,7 +86,7 @@
     cursor: default;
 }
 
-p-container {
+.p-container {
     display: none;
 }
 
@@ -90,8 +95,58 @@ p-container {
     font-size: 1rem;
 }
 
+.icon-title-container{
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 0.5rem;
+    cursor: default;
+}
+
 .icon {
-    width: 50px;
-    height: 50px;
-    object-fit: contain; 
+    width: 3rem;
+    height: 3rem; 
+}
+
+.sub-container-1 h3,
+.sub-container-2 h3,
+.sub-container-3 h3 {
+    position: relative;
+    margin: 0.2rem 0;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+
+@media (max-width: 700px) {
+.sub-container {
+    right: 1rem;
+    }
+    .item.active .title{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .sub-container {
+        width: 15rem;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .title{
+        font-size: 1.5rem;
+        padding-right: 2.5rem;
+    }
+    .active-subheading .p-container {
+        font-size: 1.5rem;
+    }
+    .icon-title-container {
+        display: none;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    h2,
+    h3,
+    p{
+        font-size: 1.5rem;
+    }
 }

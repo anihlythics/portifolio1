@@ -8,26 +8,28 @@
 }
 
 .Menu {
-    width: 28rem;
+    width: 80%;
+    max-width: 28rem;
     position: fixed;
     display: flex;
     flex-direction: column;
-    top: 55%;
-    transform: translateY(-60%);
-    left: 10vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.item{
+.item {
     height: 3.7rem;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.title{
+.title {
     font-size: 1rem;
-    padding-right: 1.5rem;
+    text-align: center;
+    width: 100%;
 }
 
 .item.active .title {
@@ -35,12 +37,14 @@
 }
 
 .sub-container {
-    width: 28.5rem;
+    width: 80%;
+    max-width: 28.5rem;
     position: fixed;
     display: flex;
     flex-direction: column;
     top: 15%;
-    right: 10vw;
+    left: 50%;
+    transform: translate(-50%, 0);
     cursor: pointer;
 }
 
@@ -81,7 +85,7 @@
     background: linear-gradient(90deg, var(--transparent), var(--cyan) 100%);
 }
 
-.item.active{
+.item.active {
     position: relative;
     cursor: default;
 }
@@ -95,7 +99,7 @@
     font-size: 1rem;
 }
 
-.icon-title-container{
+.icon-title-container {
     display: flex;
     gap: 1.2rem;
     margin-bottom: 0.5rem;
@@ -104,7 +108,7 @@
 
 .icon {
     width: 3rem;
-    height: 3rem; 
+    height: 3rem;
 }
 
 .sub-container-1 h3,
@@ -115,23 +119,23 @@
     padding: 0.5rem 0 0.5rem 1rem;
 }
 
+/* Responsive styles for screens below 700px */
 @media (max-width: 700px) {
-.sub-container {
-    right: 1rem;
+    .Menu {
+        width: 90vw;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-    .item.active .title{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 700px) {
     .sub-container {
-        width: 15rem;
+        width: 90vw;
         top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
     }
-    .title{
+    .item.active .title {
+        font-size: 1rem;
+    }
+    .title {
         font-size: 1.5rem;
         padding-right: 2.5rem;
     }
@@ -146,7 +150,49 @@
     }
     h2,
     h3,
-    p{
+    p {
         font-size: 1.5rem;
+    }
+}
+
+/* Responsive styles for screens below 500px */
+@media (max-width: 500px) {
+    .Menu {
+        width: 95vw;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sub-container {
+        width: 95vw;
+        left: 50%;
+        top: 70%;
+        transform: translate(-50%, -70%);
+    }
+    .item {
+        height: 3rem;
+    }
+    .title {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+    .item.active .title {
+        font-size: 1.2rem;
+    }
+    .active-subheading .p-container {
+        font-size: 1.2rem;
+    }
+    .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+    h2,
+    h3,
+    p {
+        font-size: 1.2rem;
     }
 }
